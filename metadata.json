@@ -1,0 +1,6 @@
+{
+  "name": "Absensi Pintar QR & WhatsApp Notifikasi",
+  "description": "Aplikasi absensi siswa modern berbasis pemindaian QR Code dengan integrasi notifikasi real-time WhatsApp ke orang tua, dasbor analitik kehadiran, dan cetak kartu pelajar digital.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

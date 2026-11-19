@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#059669" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="SAS Absensi" />
+    <title>SAS (Sistem Absensi Siswa)</title>
+    <meta name="description" content="Sistem Absensi berbasis Scan Foto Wajah (Biometrik Kamera HP) dengan integrasi notifikasi real-time WhatsApp ke orang tua, dasbor analitik kehadiran, dan cetak kartu pelajar digital." />
+    <meta property="og:title" content="SAS (Sistem Absensi Siswa)" />
+    <meta property="og:description" content="Aplikasi absensi siswa modern berbasis Scan Foto Wajah dengan integrasi notifikasi real-time WhatsApp ke orang tua, dasbor analitik kehadiran, dan cetak kartu pelajar digital." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      window.__sasDeferredPrompt = null;
+      window.__sasPwaInstalled =
+        (typeof window.matchMedia === 'function' && window.matchMedia('(display-mode: standalone)').matches) ||
+        window.navigator.standalone === true;
+      window.addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        window.__sasDeferredPrompt = e;
+        window.dispatchEvent(new CustomEvent('sas:pwa-ready'));
+      });
+      window.addEventListener('appinstalled', function () {
+        window.__sasDeferredPrompt = null;
+        window.__sasPwaInstalled = true;
+        window.dispatchEvent(new CustomEvent('sas:pwa-installed'));
+      });
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
